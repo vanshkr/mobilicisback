@@ -25,6 +25,8 @@
 
 This application was created by Vansh Kumar.
 
+## HOSTED ON `https://sampleserver-ce15.onrender.com/`
+
 ## Index.js
 
 This is a backend code for a web application that connects to a MongoDB database using Mongoose ORM and an Express server. The schema used for the MongoDB documents is defined in the sampleSchema.js file.
