@@ -20,7 +20,7 @@ const fileContents = fs.readFileSync("sample_data.json");
 const data = JSON.parse(fileContents);
 
 mongoose
-  .connect('mongodb+srv://krvansh30:hello123%23%40%21@oruphones.ngnnh8i.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(process.env.CONNECTION_URL , { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() =>
     app.listen(PORT, () => {
       console.log(`Example app listening on PORT ${PORT}`);
