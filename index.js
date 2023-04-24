@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 app.use("/", sampleRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT;
 const fileContents = fs.readFileSync("sample_data.json");
 const data = JSON.parse(fileContents);
 
